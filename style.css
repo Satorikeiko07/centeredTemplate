@@ -1,0 +1,48 @@
+/*BASIC INTER SUPPORT + CUSTOMIZATION*/
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    font-weight: 500; /*Medium*/
+    font-feature-settings: "dlig", "tnum", "zero", "ss02", "cv08";
+}
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+}
+
+/*REST OF STYLES*/
+body {
+    margin: auto;
+    width: 45rem;
+}
+
+h1 small, h2 small {
+    color: #808080;
+}
+
+code {
+    background: #2f2f2f;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a, a:visited {
+    color: #0066cc;
+}
+
+i {
+    font-weight: 700; /*Bold*/
+}
+
+.copyPaste:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+/*MOBILE*/
+@media (max-width: 778px) {
+    body {
+        width: 80%;
+    }
+}

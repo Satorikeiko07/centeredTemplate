@@ -16,6 +16,10 @@ body {
     width: 45rem;
 }
 
+h1::before {content: "# ";}
+h2::before {content: "## ";}
+h3::before {content: "### ";}
+
 h1 small, h2 small {
     color: #808080;
 }
@@ -35,14 +39,9 @@ i {
     font-weight: 700; /*Bold*/
 }
 
-.copyPaste:hover {
-    filter: brightness(150%);
-    cursor: pointer;
-}
-
 /*MOBILE*/
 @media (max-width: 778px) {
     body {
-        width: 80%;
+        width: 90%;
     }
 }
